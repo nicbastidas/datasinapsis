@@ -13,6 +13,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
+          ref: main
 
       - uses: actions/setup-node@v4
         with:
@@ -30,8 +31,7 @@ jobs:
         run: |
           git config user.name "DataSinapsis Bot"
           git config user.email "bot@datasinapsis.io"
-          git fetch origin main
-          git checkout main
+          git pull --rebase origin main
           git add index.html
           git diff --staged --quiet || git commit -m "daily: $(date -u +%Y-%m-%d)"
-          git push --force-with-lease origin main
+          git push origin main
