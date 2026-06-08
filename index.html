@@ -7,11 +7,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-/* ─────────────────────────────────────────────
-   DATA SINAPSIS — Design system
-   Inspired by The Information's clean editorial
-   but with a distinct academic / research feel
-───────────────────────────────────────────── */
 :root {
   --white:   #ffffff;
   --bg:      #fafaf8;
@@ -47,7 +42,6 @@ body {
 
 a { color: inherit; text-decoration: none; }
 
-/* ─── PROMO BANNER ─── */
 .promo-bar {
   background: #1a1008;
   color: #f0ece4;
@@ -88,7 +82,6 @@ a { color: inherit; text-decoration: none; }
   color: #6a6050;
 }
 
-/* ─── MAIN NAV ─── */
 .nav {
   border-bottom: 1px solid var(--rule);
   background: var(--white);
@@ -188,7 +181,6 @@ a { color: inherit; text-decoration: none; }
 }
 .nav-sub:hover { background: #0a5050; }
 
-/* secondary nav */
 .subnav {
   border-bottom: 1px solid var(--rule);
   background: var(--bg);
@@ -227,14 +219,12 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 
-/* ─── LAYOUT ─── */
 .wrap {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 clamp(16px, 3vw, 48px);
 }
 
-/* ─── MASTHEAD ─── */
 .masthead {
   padding: 32px 0 0;
   border-bottom: 3px double var(--rule2);
@@ -294,7 +284,6 @@ a { color: inherit; text-decoration: none; }
   color: var(--body);
 }
 
-/* ─── SECTION LABEL ─── */
 .section-label {
   font-family: var(--mono);
   font-size: 11px;
@@ -330,7 +319,6 @@ a { color: inherit; text-decoration: none; }
   border-bottom-color: var(--red);
 }
 
-/* ─── MAIN CONTENT GRID ─── */
 .content-grid {
   display: grid;
   grid-template-columns: 1fr 300px;
@@ -338,10 +326,8 @@ a { color: inherit; text-decoration: none; }
   margin-bottom: 48px;
 }
 
-/* ─── ARTICLE FEED ─── */
 .article-feed {}
 
-/* lead card */
 .lead-card {
   padding-bottom: 28px;
   border-bottom: 1px solid var(--rule);
@@ -383,7 +369,6 @@ a { color: inherit; text-decoration: none; }
     radial-gradient(ellipse at 70% 30%, rgba(15,107,107,0.1) 0%, transparent 60%);
 }
 
-/* article card horizontal */
 .article-card {
   display: grid;
   grid-template-columns: 1fr 140px;
@@ -411,7 +396,6 @@ a { color: inherit; text-decoration: none; }
   display: block;
 }
 
-/* placeholder image styles */
 .img-ph {
   width: 100%;
   height: 100%;
@@ -427,7 +411,6 @@ a { color: inherit; text-decoration: none; }
 .img-ph-green  { background: linear-gradient(135deg, #c8e8d0, #90c8a0); }
 .img-ph-purple { background: linear-gradient(135deg, #d8c8e8, #b090c8); }
 
-/* ─── ARTICLE TYPE LABELS ─── */
 .kicker {
   font-family: var(--mono);
   font-size: 9px;
@@ -444,7 +427,6 @@ a { color: inherit; text-decoration: none; }
 .k-trend     { color: #6a4faa; }
 .k-science   { color: #1a6a2a; }
 
-/* ─── HEADLINES ─── */
 .lead-hed {
   font-family: var(--lora);
   font-size: clamp(22px, 3vw, 34px);
@@ -506,7 +488,6 @@ a { color: inherit; text-decoration: none; }
 }
 .byline::before { content: ''; display: block; width: 16px; height: 1px; background: var(--rule2); }
 
-/* ─── SIDEBAR ─── */
 .sidebar {}
 
 .sidebar-section {
@@ -550,7 +531,6 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 
-/* market mini ticker in sidebar */
 .market-widget {
   background: var(--bg);
   border: 1px solid var(--rule);
@@ -606,7 +586,6 @@ a { color: inherit; text-decoration: none; }
 .up { color: #1a7a40; }
 .dn { color: var(--red); }
 
-/* newsletter sign-up in sidebar */
 .sidebar-cta {
   background: var(--bg2);
   border: 1px solid var(--rule);
@@ -645,14 +624,12 @@ a { color: inherit; text-decoration: none; }
 }
 .cta-input-row button:hover { background: #0a5050; }
 
-/* ─── FULL WIDTH SECTIONS ─── */
 .full-section {
   border-top: 2px solid var(--head);
   padding-top: 28px;
   margin-bottom: 40px;
 }
 
-/* 3-col grid */
 .col3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -702,14 +679,12 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 
-/* 2-col grid */
 .col2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
 }
 
-/* ─── FEATURE / ANALYSIS BAND ─── */
 .analysis-band {
   background: var(--bg2);
   border-top: 1px solid var(--rule2);
@@ -790,7 +765,6 @@ a { color: inherit; text-decoration: none; }
   line-height: 1.4;
 }
 
-/* ─── PRO GATE ─── */
 .pro-gate {
   border: 1px solid #b8a060;
   background: linear-gradient(to right, var(--amber-lt), #fffdf5);
@@ -839,7 +813,6 @@ a { color: inherit; text-decoration: none; }
 }
 .pg-btn:hover { background: var(--head); }
 
-/* ─── PULLQUOTE ─── */
 .pullquote {
   border-left: 3px solid var(--teal);
   padding: 4px 0 4px 24px;
@@ -862,48 +835,94 @@ a { color: inherit; text-decoration: none; }
   font-style: normal;
 }
 
-/* ─── MEMBERSHIP ─── */
-.membership-section {
-  background: var(--bg);
+.digest-section {
   border-top: 2px solid var(--head);
-  border-bottom: 2px solid var(--head);
-  padding: clamp(32px, 4vw, 52px) 0;
-  margin-bottom: 48px;
+  padding-top: 28px;
+  margin-bottom: 40px;
 }
 
-.ms-head {
-  text-align: center;
-  margin-bottom: 36px;
+.digest-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
 }
-.ms-eyebrow {
+
+.digest-item {
+  padding: 16px;
+  background: var(--bg);
+  border: 1px solid var(--rule);
+}
+
+.digest-kicker {
   font-family: var(--mono);
-  font-size: 9px;
-  letter-spacing: 0.3em;
+  font-size: 8px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 6px;
+  display: block;
+}
+
+.digest-hed {
+  font-family: var(--lora);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--head);
+  margin-bottom: 6px;
+}
+.digest-hed:hover { color: var(--teal); cursor: pointer; }
+
+.digest-source {
+  font-family: var(--mono);
+  font-size: 8px;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--muted);
-  display: block;
-  margin-bottom: 8px;
 }
-.ms-title {
-  font-family: var(--lora);
-  font-size: clamp(22px, 3vw, 36px);
-  font-weight: 700;
-  color: var(--head);
-  letter-spacing: -0.02em;
-}
-.ms-title em { font-style: italic; color: var(--teal); }
 
-.tiers {
+.footer {
+  background: #1a1008;
+  color: #a09080;
+  padding: 48px 0 32px;
+}
+
+.footer-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 clamp(16px, 3vw, 48px);
+}
+
+.footer-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0;
-  border: 1px solid var(--rule2);
-  background: var(--rule);
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 32px;
 }
 
-.tier {
-  background: var(--white);
-  padding: 28px 26px;
-  display: flex;
-  flex-direction: column;
-  position
+.footer-brand {
+  font-family: var(--lora);
+  font-size: 28px;
+  font-weight: 700;
+  color: #f0ece4;
+  margin-bottom: 12px;
+}
+.footer-brand span { color: #70b0b0; }
+
+.footer-desc {
+  font-size: 12px;
+  line-height: 1.7;
+  color: #807060;
+}
+
+.footer-col-head {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #f0ece4;
+  margin-bottom: 14px;
+}
+
+.footer-links {
+  list-
